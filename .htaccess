@@ -1,6 +1,20 @@
+#RewriteEngine on
+## If a directory or a file exists, use it directly
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+## Otherwise forward it to index.php
+#RewriteRule . index.php
+
+
+Options +FollowSymLinks
+IndexIgnore */*
 RewriteEngine on
-# If a directory or a file exists, use it directly
+
+# Если запрос не начинается с web, добавляем его
+RewriteCond %{REQUEST_URI} !^/(web)
+RewriteRule (.*) /web/$1
+
+# Если файл или каталог не существует, идём к /web/index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-# Otherwise forward it to index.php
-RewriteRule . index.php
+RewriteRule . /web/index.php
