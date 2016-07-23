@@ -36,12 +36,4 @@ class SiteController extends Controller
     {
         return $this->render('index');
     }
-
-    public function actionError()
-    {
-        var_dump(Yii::getAlias('@web'));
-        var_dump(Yii::getAlias('@webroot'));
-        var_dump(Yii::getAlias('@app'));
-        die;
-    }
 }
