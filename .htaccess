@@ -3,4 +3,8 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 # Otherwise forward it to index.php
+
 RewriteRule . index.php
+
+RewriteCond %{REQUEST_URI} !^/web/
+RewriteRule ^(.*)$ /web/$1 [L,R=301]
