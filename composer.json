@@ -21,10 +21,10 @@
         "yiisoft/yii2-swiftmailer": "*",
         "guzzlehttp/guzzle": "~6.0",
         "pear/http_request2": "^2.3",
-        "heroku/heroku-buildpack-php": "*",
         "ext-gd": "*"
     },
     "require-dev": {
+        "heroku/heroku-buildpack-php": "*",
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-codeception": "*",
         "yiisoft/yii2-gii": "*",
