@@ -20,11 +20,11 @@ $this->title = 'My Yii Application';
             <p>Subject: create 3 controller: crawler, rest api, front. See links below.</p>
             <p>Target site : https://developer.fantasydata.com/docs/services/54bb5fd214338d0950b86dfe/operations/54bf2b9814338d0f80af6cc5</p>
             <?=\yii\helpers\Html::a(
-                '<b>crawler</b> - db with data but you can lick on link , or start on console, or see in github</a>',
+                '<b>crawler</b> - db with data but you can lick on link , or start on console, or see in github',
                 ['crawler/index'])?> <br/>
 
             <?=\yii\helpers\Html::a(
-                '<b>rest</b> - return data in json format'
+                '<b>rest</b> - return data in json format',
                 ['rest/index'])?><br/>
 
             <?=\yii\helpers\Html::a(
