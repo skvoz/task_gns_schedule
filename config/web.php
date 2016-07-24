@@ -56,8 +56,10 @@ $config = [
 
     ],
     'modules' => [
-        'gii' => 'yii\gii\Module',
-        'allowedIPs' => ['*'],
+        'gii' => [
+            'class' => 'yii\gii\Module',
+            'allowedIPs' => ['*'],
+        ],
     ],
     'params' => $params,
 ];

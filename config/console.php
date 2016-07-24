@@ -26,8 +26,11 @@ $config = [
     ],
     'params' => $params,
     'modules' => [
-        'gii' => 'yii\gii\Module',
-        'allowedIPs' => ['*'],
+        'gii' => [
+            'class' => 'yii\gii\Module',
+            'allowedIPs' => ['*'],
+        ],
+
     ],
     /*
     'controllerMap' => [
