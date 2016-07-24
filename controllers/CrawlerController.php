@@ -6,7 +6,7 @@ namespace app\controllers;
 
 use app\models\MainModel;
 use HTTP_Request2;
-use yii\console\Controller;
+use yii\web\Controller;
 
 class CrawlerController extends Controller
 {
