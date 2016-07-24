@@ -21,7 +21,8 @@
         "yiisoft/yii2-swiftmailer": "*",
         "guzzlehttp/guzzle": "~6.0",
         "pear/http_request2": "^2.3",
-        "ext-gd": "*"
+        "ext-gd": "*",
+        "yiisoft/yii2-gii": "~2.0"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*",
