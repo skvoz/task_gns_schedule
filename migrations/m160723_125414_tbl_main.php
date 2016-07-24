@@ -14,9 +14,9 @@ class m160723_125414_tbl_main extends Migration
         /** @var Migration $this */
         $this->createTable('main', [
            'id' => $this->primaryKey(),
-            'date' => $this->varchar(255),
-            'owner' => $this->varchar(255),
-            'guest' => $this->varchar(255),
+            'date' => $this->string(255),
+            'owner' => $this->string(255),
+            'guest' => $this->string(255),
             'stadium' => $this->integer(11),
         ], $tableOptions);
     }
