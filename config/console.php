@@ -25,6 +25,10 @@ $config = [
         'db' => $db,
     ],
     'params' => $params,
+    'modules' => [
+        'gii' => 'yii\gii\Module',
+        'allowedIPs' => ['*'],
+    ],
     /*
     'controllerMap' => [
         'fixture' => [ // Fixture generation command line.
