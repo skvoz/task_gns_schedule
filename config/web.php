@@ -50,7 +50,7 @@ $config = [
                 'crawler/index' => 'crawler/index',
                 'site/index' => 'site/index',
                 'site/info' => 'site/info',
-//                ['class' => 'yii\rest\UrlRule', 'controller' => 'rest'],
+                'matrix/index' => 'matrix/index',
             ],
         ],
 

@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\MatrixForm;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -34,7 +35,17 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $model = new MatrixForm();
+        $round = Yii::$app->request->get('round');
+        $model->x = Yii::$app->request->get('x');
+        $model->size = Yii::$app->request->get('size');
+        $model->y = Yii::$app->request->get('y');
+
+        return $this->render('index', [
+            'model' => $model,
+            'round' => $round,
+
+        ]);
     }
 
     public function actionInfo()

@@ -1,102 +1,37 @@
-Yii 2 Basic Project Template
-============================
+Test project for GNS
+===================
 
-Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-rapidly creating small projects.
-
-The template contains the basic features including user login/logout and a contact page.
-It includes all commonly used configurations that would allow you to focus on adding new
-features to your application.
-
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-basic/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-basic/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-basic.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-basic)
-
-DIRECTORY STRUCTURE
--------------------
-
-      assets/             contains assets definition
-      commands/           contains console commands (controllers)
-      config/             contains application configurations
-      controllers/        contains Web controller classes
-      mail/               contains view files for e-mails
-      models/             contains model classes
-      runtime/            contains files generated during runtime
-      tests/              contains various tests for the basic application
-      vendor/             contains dependent 3rd-party packages
-      views/              contains view files for the Web application
-      web/                contains the entry script and Web resources
+В компанию приходит задача: вывести информацию из базы данных (клиент предоставляет БД) на веб страницу и сделать 
+до 5 простых фильтров по разным значениям на Backbone Js + простая верстка на bootstrap
 
 
+В этот момент в команде доступны для новых задач 6 человек:
+PHP разработчик (начинающий),
+PHP разработчик (средний уровень),
+Frontend developer (хорошо знающий jQuery), Frontend developer (хорошо знающий нативный JS), 
+Frontend developer (начинающий) и вы
 
-REQUIREMENTS
-------------
+Разбейте задачу на процессы и напишит е кого из людей вы бы задействовали для ее решения и на каких процессах, 
+если клиент поставил срок, что задача должна быть выполнена в течении 1 дня (считаем, что это осуществимо) 
+И какой из процессов, с вашей точки зрения, займет самое большое количество времени.
 
-The minimum requirement by this project template that your Web server supports PHP 5.4.0.
+Бизнес процессы
+---------------
+- декомпозиция задачи ( митинг ) 
+- оценка времени ( тимлид ) 
+- занесение в багтрекинг ( jira etc) задачи и информации по проекту , доступы и прочее ( тимлид ) 
+- проверка своевременности прохождения по чекпойнтам в процессе работы ( тимлид ) 
+- работа над задачами ( разработчики ) 
 
+Вероятные задачи
+----------------
+ - организация информационного поля с соглашениями ( тимлид ) 
+ - верстка :начинающий фронт 
+ - native js ( фильтры ): фронт с знаниями JQuery
+ - backbone js ( web application ):  фронт native JS
+ - написание соглашений по именованию DOMElements ( необоходимо для командной работы ) :верстальщик 
+ - rest api бекенд ( сам бекенд , и хайлоад ) : бек на начинающем php , хайлоад мидл php ( тимлид проверяет ) 
+ - написание соглашений по именованию rest api: тимлид
+ - организация сервера , тимлид
 
-INSTALLATION
-------------
-
-### Install from an Archive File
-
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `basic` that is directly under the Web root.
-
-Set cookie validation key in `config/web.php` file to some random secret string:
-
-```php
-'request' => [
-    // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-    'cookieValidationKey' => '<secret random string goes here>',
-],
-```
-
-You can then access the application through the following URL:
-
-~~~
-http://localhost/basic/web/
-~~~
-
-
-### Install via Composer
-
-If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
-at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
-
-You can then install this project template using the following command:
-
-~~~
-php composer.phar global require "fxp/composer-asset-plugin:~1.1.1"
-php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
-~~~
-
-Now you should be able to access the application through the following URL, assuming `basic` is the directory
-directly under the Web root.
-
-~~~
-http://localhost/basic/web/
-~~~
-
-
-CONFIGURATION
--------------
-
-### Database
-
-Edit the file `config/db.php` with real data, for example:
-
-```php
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '1234',
-    'charset' => 'utf8',
-];
-```
-
-**NOTES:**
-- Yii won't create the database for you, this has to be done manually before you can access it.
-- Check and edit the other files in the `config/` directory to customize your application as required.
-- Refer to the README in the `tests` directory for information specific to basic application tests.
+ 
